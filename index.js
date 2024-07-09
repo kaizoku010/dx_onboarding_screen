@@ -7,3 +7,8 @@ import App from './App';
 import {name as appName} from './app.json';
 
 AppRegistry.registerComponent(appName, () => App);
+
+AppRegistry.runApplication(appName, {
+    initialProps: {},
+    rootTag: document.getElementById('root'), // Replace 'root' with your web app's root id
+  });
